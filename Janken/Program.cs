@@ -12,8 +12,10 @@ namespace Janken
             Judge saito = new Judge();
 
             Player murata = new Player("村田");
+            murata.HandTactics = new RandomTactics();
 
             Player yamada = new Player("山田");
+            yamada.HandTactics = new RandomTactics();
 
             saito.StartJanken(murata, yamada);
 
